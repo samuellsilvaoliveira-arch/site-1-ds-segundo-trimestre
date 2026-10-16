@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meu Blog de Animes</title>
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+   * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+   }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background-color: #f4f6f9;
+     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f6f9;
       color: #333;
       line-height: 1.6;
       padding-bottom: 60px;
@@ -80,16 +80,17 @@
   </style>
 </head>
 <body>
-
   <header>
     <h1>Portal Animes</h1>
     <p>Autor: Samuell da Silva Oliveira</p>
   </header>
 
   <div class="container">
+    
     <article class="post">
       <h2>Tokyo Revengers</h2>
       <p>Acompanhe a jornada de Takemichi Hanagaki, um jovem que descobre a capacidade de viajar 12 anos no passado. Determinado a salvar sua ex-namorada de colégio, Hinata Tachibana, do trágico destino causado pela temida gangue Tokyo Manji, ele decide se infiltrar no submundo dos delinquentes juvenis para mudar o rumo da história.</p>
+      <img src="image.png" alt="Cena de Tokyo Revengers">
       <button class="btn-curtir" onclick="gerenciarCurtida(this)">
         Curtir (<span class="num-curtidas">45</span>)
       </button>
@@ -98,6 +99,7 @@
     <article class="post">
       <h2>Jujutsu Kaisen</h2>
       <p>Apesar de já estarmos em julho, o ano mal começou para os otakus, que esperam ansiosos por diversos animes que serão lançados até outubro. Ainda assim, já é tempo de apontar os dedos para as melhores séries de animação japonesas lançadas até agora em 2026. Entre as temporadas já finalizadas e produções que ainda estão tomando seu rumo, selecionamos 20 títulos que marcaram e seguem marcando o ano até aqui.</p>
+      <img src="image copy.png" alt="Cena de Jujutsu Kaisen">
       <button class="btn-curtir" onclick="gerenciarCurtida(this)">
         Curtir (<span class="num-curtidas">12</span>)
       </button>
@@ -106,16 +108,17 @@
     <article class="post">
       <h3>Steel Ball Run (estreia)</h3>
       <p>A humanidade está à beira do colapso após a descida repentina dos demoníacos Kiju, devastando cidades e esmagando tudo em seu caminho. A resistência falha. A segurança se esvai. A situação parece desesperadora... até que um galo solitário surge. Com esporas afiadas como navalhas e um grito de guerra que rasga os mares, este herói improvável carrega o destino do mundo em suas asas.</p>
-      <img src="imagem.png" alt="Cena de Steel Ball Run">
+      <img src="image copy 2.png" alt="Cena de Steel Ball Run">
       <button class="btn-curtir" onclick="gerenciarCurtida(this)">
         Curtir (<span class="num-curtidas">28</span>)
       </button>
     </article>
+
   </div>
 
   <script>
     function gerenciarCurtida(botao) {
-      const contador =botao.querySelector('.num-curtidas');
+      const contador = botao.querySelector('.num-curtidas');
       let total = parseInt(contador.textContent);
 
       if (botao.classList.contains('ativo')) {
@@ -125,11 +128,12 @@
         botao.classList.add('ativo');
         contador.textContent = total + 1;
       }
+       
     }
   </script>
-
 </body>
 </html>
+
 
 
 
